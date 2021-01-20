@@ -1,7 +1,7 @@
 
 --carrera
-SELECT 
-    carrera.nombre
-FROM matricula, carrera
-WHERE matricula.estudianteID = @studentID
-AND carrera.carreraID = matricula.carreraID
+SELECT
+    carrera.carreraID,
+    carrera.nombre AS carrera
+FROM carrera
+WHERE carrera.carreraID = @studentID
