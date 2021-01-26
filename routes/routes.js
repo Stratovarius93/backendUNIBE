@@ -25,7 +25,7 @@ router.get('/registration/:id', registrationController.getRegistrationByID);
 
 router.post('/account', accountController.addAccount);
 
-router.put('/account/:id', accountController.updateEmailAccountByID);
+router.put('/account/update/:id', accountController.updateEmailAccountByID);
 
 router.get('/accounts', accountController.getAllAccounts);
 

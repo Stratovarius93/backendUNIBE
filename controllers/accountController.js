@@ -15,6 +15,7 @@ const getEmailAccountByID = async (req, res) => {
     const careerID = req.params.id;
     const emailElement = await unibeData.getEmailAccountByID(careerID);
     res.send(emailElement);
+    //setTimeout((function() {res.send(emailElement)}), 3000);
   } catch (e) {
     res.status(400).send(e.message);
   }

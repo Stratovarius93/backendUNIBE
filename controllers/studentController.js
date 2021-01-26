@@ -5,8 +5,7 @@ const getStudentById = async (req, res) => {
     const studentID = req.params.id;
     const studentElement = await unibeData.getStudentById(studentID);
     res.send(studentElement);
-
-    //setTimeout((function() {res.send(studentElement)}), 5000);
+    //setTimeout((function() {res.send(studentElement)}), 3000);
   } catch (e) {
     res.status(400).send(e.message);
   }
