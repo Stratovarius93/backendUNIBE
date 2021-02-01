@@ -17,3 +17,5 @@ app.listen(config.port, () => {
   console.log('app listening on url http://localhost:' + config.port);
 });
 
+//sudo lsof -i :8080
+////kill -9 PID

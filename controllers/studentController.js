@@ -12,5 +12,5 @@ const getStudentById = async (req, res) => {
 };
 
 module.exports = {
-  getStudentById,
+  getStudentById
 };
